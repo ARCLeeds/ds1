@@ -12,8 +12,6 @@ RUN apt-get install -y libopenblas-base
 
 RUN apt-get install -y wget
 
-RUN pip install --upgrade pip
-
 RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     wget --quiet https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh -O ~/anaconda.sh && \
     /bin/bash ~/anaconda.sh -b -p /opt/conda && \
