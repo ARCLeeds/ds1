@@ -32,14 +32,15 @@ To attach external directories (the recommended use-case where you need to save 
 `docker run -v $HOME:/home -i -t ds1`
 
 This will mount the external user home directory (`$HOME`) to the local mount point `/home` within the container. 
-Files can be saved to and loaded from this directory. Multiple external directories can be added to the container by using multiple `-v' clauses.
+Files can be saved to and loaded from this directory. Multiple external directories can be added to the container by using multiple `-v` clauses.
 
 This container also contains a Jupyter notebook server. This can be launched when the container starts and an external directory mounted at the same time:
 
-docker run -v $HOME:/home -i -t -p 8888:8888 ds1 /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/home --ip='*' --port=8888 --no-browser"
+`docker run -v $HOME:/home -i -t -p 8888:8888 ds1 /bin/bash /
+-c "/opt/conda/bin/jupyter notebook --notebook-dir=/home --ip='*' --port=8888 --no-browser"`
 
 To use, launch a Web browser and point to `http://localhost:8888`
 
-When finished, the notebook server can be closed with [CTRL]C
+When finished, the notebook server can be closed with `[CTRL] C`
 
 
