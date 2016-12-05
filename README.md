@@ -1,4 +1,4 @@
-## Basic Deep Learning Docker container:
+## Basic Deep Learning Docker container
 
 * GNU compilers
 * OpenBLAS
@@ -8,7 +8,11 @@
 * Tensorflow
 * Keras
 
-An additional directory, `opt/notebooks` exists within the container that contains a couple of starter datasets:
+An additional directory, `opt/notebooks` exists within the container that contains a couple of starter datasets
+from the UCI Machine Learning Repository:
+
+1. The Pima Indians Diabetes Data Set
+[https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes]
 
 
 Once cloned via `git clone` and assuming Docker is installed locally, it can first be built:
@@ -37,8 +41,8 @@ Files can be saved to and loaded from this directory. Multiple external director
 This container also contains a Jupyter notebook server. This can be launched when the container starts and an external directory mounted at the same time:
 
 ~~~
-`docker run -v $HOME:/home -i -t -p 8888:8888 ds1 /bin/bash \ 
--c "/opt/conda/bin/jupyter notebook --notebook-dir=/home --ip='*' --port=8888 --no-browser"`
+docker run -v $HOME:/home -i -t -p 8888:8888 ds1 /bin/bash \ 
+-c "/opt/conda/bin/jupyter notebook --notebook-dir=/home --ip='*' --port=8888 --no-browser"
 ~~~
 
 To use, launch a Web browser and point to `http://localhost:8888`
