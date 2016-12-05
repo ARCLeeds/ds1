@@ -36,8 +36,10 @@ Files can be saved to and loaded from this directory. Multiple external director
 
 This container also contains a Jupyter notebook server. This can be launched when the container starts and an external directory mounted at the same time:
 
-`docker run -v $HOME:/home -i -t -p 8888:8888 ds1 /bin/bash /
+~~~
+`docker run -v $HOME:/home -i -t -p 8888:8888 ds1 /bin/bash \ 
 -c "/opt/conda/bin/jupyter notebook --notebook-dir=/home --ip='*' --port=8888 --no-browser"`
+~~~
 
 To use, launch a Web browser and point to `http://localhost:8888`
 
