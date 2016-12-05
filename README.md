@@ -12,7 +12,10 @@ An additional directory, `opt/notebooks` exists within the container that contai
 from the UCI Machine Learning Repository:
 
 1. The Pima Indians Diabetes Data Set
-[https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes]
+[https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes](https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes)
+
+2. Ionosphere Data Set
+[https://archive.ics.uci.edu/ml/datasets/Ionosphere](https://archive.ics.uci.edu/ml/datasets/Ionosphere)
 
 
 Once cloned via `git clone` and assuming Docker is installed locally, it can first be built:
