@@ -32,3 +32,10 @@ RUN cd /opt/notebooks && wget http://archive.ics.uci.edu/ml/machine-learning-dat
 
 RUN cd /opt/notebooks && wget http://archive.ics.uci.edu/ml/machine-learning-databases/pima-indians-diabetes/pima-indians-diabetes.data && \
     wget http://archive.ics.uci.edu/ml/machine-learning-databases/pima-indians-diabetes/pima-indians-diabetes.names
+
+RUN apt-get install nano
+
+
+
+
+
