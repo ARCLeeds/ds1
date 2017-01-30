@@ -27,6 +27,9 @@ RUN pip install keras
 
 RUN conda install jupyter -y --quiet && mkdir /opt/notebooks
 
+#Create stub directory as internal bindpoint for /nobackup on Leeds clusters
+RUN mkdir /nobackup
+
 RUN cd /opt/notebooks && wget http://archive.ics.uci.edu/ml/machine-learning-databases/ionosphere/ionosphere.data && \
     wget http://archive.ics.uci.edu/ml/machine-learning-databases/ionosphere/ionosphere.names
 
